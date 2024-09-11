@@ -1,13 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&amp;family=Rubik:ital,wght@0,300..900;1,300..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Card from TailwindCSS</title>
+  </head>
+  <body class="font-['Rubik','Anuphan']">
+    <div class="cursor-pointer">
+      <a
+        href="#"
+        class="bg-white shadow-md flex flex-col max-w-[300px] rounded-lg overflow-hidden transition hover:-translate-y-4 hover:shadow-md"
+      >
+        <img
+          src="https://public-assets.skooldio.com/storefront-sku%2F4a711ed0-43d5-46ea-b974-e3788a62c9ac%2FAlgo-regular.png"
+          alt=""
+          srcset=""
+        />
+
+        <!-- Information -->
+        <div class="">
+          <!-- COURSE NAME -->
+          <div>
+            <span
+              class="box-border min-w-0 mb-0.25 text-[#faa91a] block text-xs font-normal tracking-[0.03125em]"
+            >
+              ONLINE COURSE
+            </span>
+            <h3
+              class="text-ellipsis overflow-hidden font-medium text-base tracking-[0.00625em] box-border min-w-0 mb-0.25 text-[#231f20]"
+            >
+              Algorithm Essentials: Bridging Theory and Real-World Practice
+            </h3>
+            <p
+              class="text-ellipsis overflow-hidden tracking-[0.03125em] box-border min-w-0 my-0 text-[#707070] text-sm font-normal"
+            >
+              เรียนรู้กระบวนการคิดในการเขียนโปรแกรมด้วย Algorithm
+            </p>
+          </div>
+          <!-- COURSE RATING AND INSTRUCTOR -->
+          <div></div>
+          <!-- COURSE PRICE -->
+          <div></div>
+        </div>
+      </a>
+    </div>
+  </body>
 </html>
