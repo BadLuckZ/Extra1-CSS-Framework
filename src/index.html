@@ -10,45 +10,78 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/6e77fb55a0.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Card from TailwindCSS</title>
   </head>
   <body class="font-['Rubik','Anuphan']">
-    <div class="cursor-pointer">
+    <!-- Card Catalog -->
+    <div
+      class="cursor-pointer bg-slate-50 p-6 flex justify-center items-center w-screen h-screen overflow-y-auto"
+    >
+      <!-- Card -->
       <a
         href="#"
         class="bg-white shadow-md flex flex-col max-w-[300px] rounded-lg overflow-hidden transition hover:-translate-y-4 hover:shadow-md"
       >
         <img
           src="https://public-assets.skooldio.com/storefront-sku%2F4a711ed0-43d5-46ea-b974-e3788a62c9ac%2FAlgo-regular.png"
-          alt=""
-          srcset=""
         />
 
         <!-- Information -->
-        <div class="">
+        <div class="p-4 flex flex-col gap-2">
           <!-- COURSE NAME -->
-          <div>
+          <div
+            class="box-border block text-base font-medium min-w-0 min-h-36 text-left"
+          >
             <span
-              class="box-border min-w-0 mb-0.25 text-[#faa91a] block text-xs font-normal tracking-[0.03125em]"
+              class="box-border min-w-0 mb-0.25 text-[#faa91a] block text-xs font-normal tracking-[0.5px]"
             >
               ONLINE COURSE
             </span>
             <h3
-              class="text-ellipsis overflow-hidden font-medium text-base tracking-[0.00625em] box-border min-w-0 mb-0.25 text-[#231f20]"
+              class="text-ellipsis overflow-hidden font-medium text-base tracking-[0.1px] box-border min-w-0 mb-0.25 text-[#231f20]"
             >
               Algorithm Essentials: Bridging Theory and Real-World Practice
             </h3>
             <p
-              class="text-ellipsis overflow-hidden tracking-[0.03125em] box-border min-w-0 my-0 text-[#707070] text-sm font-normal"
+              class="text-ellipsis overflow-hidden tracking-[0.5px] box-border min-w-0 my-0 text-[#707070] text-sm font-normal"
             >
               เรียนรู้กระบวนการคิดในการเขียนโปรแกรมด้วย Algorithm
             </p>
           </div>
           <!-- COURSE RATING AND INSTRUCTOR -->
-          <div></div>
-          <!-- COURSE PRICE -->
-          <div></div>
+          <div
+            class="box-border block text-base font-medium flex flex-col gap-4"
+          >
+            <!-- RATING -->
+            <div class="flex gap-1 text-[#faa91a] text-sm leading-none">
+              <span class="inline-flex items-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </span>
+              <span>4.5</span>
+            </div>
+            <!-- INSTRUCTOR -->
+            <div class="flex box-border items-center gap-2">
+              <img
+                class="flex w-[32px] h-[32perx] overflow-hidden relative"
+                src="https://public-assets.skooldio.com/storefront-category%2F6bae3f47-a202-42ec-883f-1b5c459d401a%2FSkooldio_logo_crop.jpeg"
+                alt=""
+              />
+              <p class="border-box text-[#231f20] text-xs block mb-0.5">
+                Skooldio Team
+              </p>
+            </div>
+          </div>
         </div>
+        <!-- COURSE PRICE -->
+        <div></div>
       </a>
     </div>
   </body>
